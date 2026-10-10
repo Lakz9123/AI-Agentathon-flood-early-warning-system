@@ -1,0 +1,97 @@
+{
+  "District 1 - Coastal Zone": {
+    "name": "District 1 - Coastal Zone",
+    "basin": "Coastal Tidal Sector & Harbor",
+    "total_events": 15,
+    "avg_annual_rainfall_mm": 1350,
+    "max_recorded_water_m": 7.9,
+    "most_severe_event": "2025 Cyclone Surge & Seawall Breach",
+    "total_affected_population": 140000,
+    "trend": "Upward (+38% recurrence over 5 yrs)",
+    "records": [
+      { "year": 2019, "flood_events": 1, "max_rainfall_mm": 110, "max_water_level_m": 5.2, "affected_population": 8500, "evacuations": 1200, "damage_usd_m": 14.2, "severity": "Moderate" },
+      { "year": 2020, "flood_events": 2, "max_rainfall_mm": 140, "max_water_level_m": 6.1, "affected_population": 16000, "evacuations": 3400, "damage_usd_m": 28.5, "severity": "High" },
+      { "year": 2021, "flood_events": 1, "max_rainfall_mm": 95, "max_water_level_m": 4.8, "affected_population": 6000, "evacuations": 800, "damage_usd_m": 9.1, "severity": "Minor" },
+      { "year": 2022, "flood_events": 3, "max_rainfall_mm": 175, "max_water_level_m": 7.3, "affected_population": 32000, "evacuations": 7800, "damage_usd_m": 52.0, "severity": "Critical" },
+      { "year": 2023, "flood_events": 2, "max_rainfall_mm": 130, "max_water_level_m": 5.9, "affected_population": 14500, "evacuations": 2900, "damage_usd_m": 22.4, "severity": "High" },
+      { "year": 2024, "flood_events": 2, "max_rainfall_mm": 155, "max_water_level_m": 6.8, "affected_population": 22000, "evacuations": 5100, "damage_usd_m": 36.8, "severity": "High" },
+      { "year": 2025, "flood_events": 4, "max_rainfall_mm": 190, "max_water_level_m": 7.9, "affected_population": 41000, "evacuations": 11200, "damage_usd_m": 74.5, "severity": "Critical" }
+    ]
+  },
+  "District 2 - River Basin": {
+    "name": "District 2 - River Basin",
+    "basin": "Upper River Floodplain & Weirs",
+    "total_events": 22,
+    "avg_annual_rainfall_mm": 1680,
+    "max_recorded_water_m": 8.9,
+    "most_severe_event": "2025 Great River Crest & Weir Breach",
+    "total_affected_population": 246200,
+    "trend": "Rapidly Escalating (+54% surge frequency)",
+    "records": [
+      { "year": 2019, "flood_events": 3, "max_rainfall_mm": 160, "max_water_level_m": 7.8, "affected_population": 28000, "evacuations": 6500, "damage_usd_m": 42.0, "severity": "High" },
+      { "year": 2020, "flood_events": 2, "max_rainfall_mm": 135, "max_water_level_m": 6.9, "affected_population": 19000, "evacuations": 4200, "damage_usd_m": 29.3, "severity": "Moderate" },
+      { "year": 2021, "flood_events": 4, "max_rainfall_mm": 210, "max_water_level_m": 8.4, "affected_population": 45000, "evacuations": 12000, "damage_usd_m": 82.1, "severity": "Critical" },
+      { "year": 2022, "flood_events": 1, "max_rainfall_mm": 90, "max_water_level_m": 5.2, "affected_population": 7200, "evacuations": 1100, "damage_usd_m": 11.5, "severity": "Minor" },
+      { "year": 2023, "flood_events": 3, "max_rainfall_mm": 180, "max_water_level_m": 7.7, "affected_population": 31000, "evacuations": 7100, "damage_usd_m": 49.6, "severity": "High" },
+      { "year": 2024, "flood_events": 4, "max_rainfall_mm": 225, "max_water_level_m": 8.6, "affected_population": 52000, "evacuations": 14300, "damage_usd_m": 96.0, "severity": "Critical" },
+      { "year": 2025, "flood_events": 5, "max_rainfall_mm": 245, "max_water_level_m": 8.9, "affected_population": 64000, "evacuations": 18900, "damage_usd_m": 124.0, "severity": "Critical" }
+    ]
+  },
+  "District 3 - Lowland Zone": {
+    "name": "District 3 - Lowland Zone",
+    "basin": "Lowland Depression & Retention Marsh",
+    "total_events": 12,
+    "avg_annual_rainfall_mm": 1120,
+    "max_recorded_water_m": 6.9,
+    "most_severe_event": "2024 Retention Basin Overflow",
+    "total_affected_population": 97700,
+    "trend": "Moderate Increase (+22% retention lag)",
+    "records": [
+      { "year": 2019, "flood_events": 1, "max_rainfall_mm": 85, "max_water_level_m": 4.2, "affected_population": 5000, "evacuations": 600, "damage_usd_m": 6.2, "severity": "Minor" },
+      { "year": 2020, "flood_events": 1, "max_rainfall_mm": 95, "max_water_level_m": 4.6, "affected_population": 6800, "evacuations": 900, "damage_usd_m": 8.4, "severity": "Minor" },
+      { "year": 2021, "flood_events": 2, "max_rainfall_mm": 125, "max_water_level_m": 5.8, "affected_population": 13000, "evacuations": 2400, "damage_usd_m": 18.0, "severity": "Moderate" },
+      { "year": 2022, "flood_events": 2, "max_rainfall_mm": 140, "max_water_level_m": 6.2, "affected_population": 17500, "evacuations": 3800, "damage_usd_m": 26.5, "severity": "High" },
+      { "year": 2023, "flood_events": 1, "max_rainfall_mm": 110, "max_water_level_m": 5.1, "affected_population": 9400, "evacuations": 1500, "damage_usd_m": 12.1, "severity": "Moderate" },
+      { "year": 2024, "flood_events": 3, "max_rainfall_mm": 165, "max_water_level_m": 6.9, "affected_population": 25000, "evacuations": 5900, "damage_usd_m": 39.4, "severity": "High" },
+      { "year": 2025, "flood_events": 2, "max_rainfall_mm": 150, "max_water_level_m": 6.5, "affected_population": 21000, "evacuations": 4800, "damage_usd_m": 31.0, "severity": "High" }
+    ]
+  },
+  "District 4 - Metro Basin": {
+    "name": "District 4 - Metro Basin",
+    "basin": "Downtown Arterial Basin & Underpasses",
+    "total_events": 20,
+    "avg_annual_rainfall_mm": 1540,
+    "max_recorded_water_m": 8.7,
+    "most_severe_event": "2025 Flash Supercell Underpass Inundation",
+    "total_affected_population": 277000,
+    "trend": "High Volatility (+45% flash events)",
+    "records": [
+      { "year": 2019, "flood_events": 2, "max_rainfall_mm": 120, "max_water_level_m": 6.8, "affected_population": 24000, "evacuations": 4800, "damage_usd_m": 38.0, "severity": "Moderate" },
+      { "year": 2020, "flood_events": 1, "max_rainfall_mm": 105, "max_water_level_m": 6.2, "affected_population": 15000, "evacuations": 2600, "damage_usd_m": 21.4, "severity": "Moderate" },
+      { "year": 2021, "flood_events": 3, "max_rainfall_mm": 170, "max_water_level_m": 7.6, "affected_population": 38000, "evacuations": 8500, "damage_usd_m": 62.0, "severity": "High" },
+      { "year": 2022, "flood_events": 2, "max_rainfall_mm": 145, "max_water_level_m": 7.1, "affected_population": 29000, "evacuations": 6100, "damage_usd_m": 47.3, "severity": "High" },
+      { "year": 2023, "flood_events": 4, "max_rainfall_mm": 195, "max_water_level_m": 8.1, "affected_population": 54000, "evacuations": 13800, "damage_usd_m": 94.2, "severity": "Critical" },
+      { "year": 2024, "flood_events": 3, "max_rainfall_mm": 180, "max_water_level_m": 7.9, "affected_population": 46000, "evacuations": 10900, "damage_usd_m": 78.5, "severity": "Critical" },
+      { "year": 2025, "flood_events": 5, "max_rainfall_mm": 230, "max_water_level_m": 8.7, "affected_population": 71000, "evacuations": 19400, "damage_usd_m": 138.0, "severity": "Critical" }
+    ]
+  },
+  "District 5 - Industrial Zone": {
+    "name": "District 5 - Industrial Zone",
+    "basin": "Heavy Industrial & Canal Corridors",
+    "total_events": 14,
+    "avg_annual_rainfall_mm": 1280,
+    "max_recorded_water_m": 7.4,
+    "most_severe_event": "2025 Industrial Sluice Overflow & Chemical Canal Alert",
+    "total_affected_population": 120200,
+    "trend": "Steadily Rising (+30% storm runoff)",
+    "records": [
+      { "year": 2019, "flood_events": 1, "max_rainfall_mm": 90, "max_water_level_m": 4.5, "affected_population": 4200, "evacuations": 500, "damage_usd_m": 12.0, "severity": "Minor" },
+      { "year": 2020, "flood_events": 2, "max_rainfall_mm": 125, "max_water_level_m": 5.7, "affected_population": 11000, "evacuations": 1900, "damage_usd_m": 27.5, "severity": "Moderate" },
+      { "year": 2021, "flood_events": 1, "max_rainfall_mm": 100, "max_water_level_m": 4.9, "affected_population": 7500, "evacuations": 1100, "damage_usd_m": 16.2, "severity": "Minor" },
+      { "year": 2022, "flood_events": 3, "max_rainfall_mm": 165, "max_water_level_m": 7.0, "affected_population": 26000, "evacuations": 6400, "damage_usd_m": 68.0, "severity": "Critical" },
+      { "year": 2023, "flood_events": 2, "max_rainfall_mm": 140, "max_water_level_m": 6.3, "affected_population": 18000, "evacuations": 4200, "damage_usd_m": 44.0, "severity": "High" },
+      { "year": 2024, "flood_events": 2, "max_rainfall_mm": 150, "max_water_level_m": 6.6, "affected_population": 20500, "evacuations": 4900, "damage_usd_m": 51.3, "severity": "High" },
+      { "year": 2025, "flood_events": 3, "max_rainfall_mm": 185, "max_water_level_m": 7.4, "affected_population": 33000, "evacuations": 8700, "damage_usd_m": 88.0, "severity": "Critical" }
+    ]
+  }
+}

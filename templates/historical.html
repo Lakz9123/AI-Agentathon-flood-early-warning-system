@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#4edea3","on-tertiary-fixed-variant":"#653e00","on-secondary-container":"#00311f","on-tertiary":"#472a00","on-error-container":"#ffdad6","surface":"#0d131f","surface-container-lowest":"#080e1a","on-background":"#dde2f4","inverse-on-surface":"#2a303e","outline":"#849495","primary-container":"#00f2fe","on-primary-fixed-variant":"#004f53","secondary-fixed-dim":"#4edea3","secondary-fixed":"#6ffbbe","inverse-surface":"#dde2f4","on-tertiary-fixed":"#2a1700","surface-dim":"#0d131f","surface-tint":"#00dce6","primary-fixed":"#6ff6ff","surface-container":"#1a202c","primary":"#e0fdff","surface-container-low":"#161c28","on-primary":"#00373a","on-primary-fixed":"#002022","tertiary-container":"#ffd3a1","surface-container-highest":"#2f3542","on-surface-variant":"#b9cacb","outline-variant":"#3a494b","surface-bright":"#333947","on-primary-container":"#006a70","tertiary":"#fff5ee","on-secondary-fixed-variant":"#005236","surface-variant":"#2f3542","on-secondary-fixed":"#002113","on-tertiary-container":"#875400","on-secondary":"#003824","on-surface":"#dde2f4","inverse-primary":"#00696f","error":"#ffb4ab","tertiary-fixed":"#ffddb8","primary-fixed-dim":"#00dce6","tertiary-fixed-dim":"#ffb95f","error-container":"#93000a","secondary-container":"#00a572","on-error":"#690005","surface-container-high":"#242a37","background":"#0d131f"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-xl":"2rem","space-lg":"1.5rem","margin-mobile":"1rem","margin-desktop":"2rem","space-2xs":"0.125rem","space-sm":"0.5rem","space-2xl":"3rem","gutter-desktop":"1.25rem","gutter-mobile":"0.75rem","space-base":"1rem","space-md":"0.75rem"},fontFamily:{"telemetry-value-lg":["JetBrains Mono"],"display-hero-mobile":["Space Grotesk"],"body-md":["Inter"],"headline-lg":["Space Grotesk"],"display-hero":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"title-sm":["Inter"],"telemetry-value-md":["JetBrains Mono"],"body-sm":["Inter"],"label-code":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Space Grotesk"],"label-caps":["JetBrains Mono"],"headline-md":["Space Grotesk"]},fontSize:{"telemetry-value-lg":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"telemetry-value-md":["20px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-code":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest/90 backdrop-blur-xl z-50 flex flex-col justify-between border-r border-outline-variant/30 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="flex flex-col"><div class="h-16 flex items-center px-space-base gap-space-sm border-b border-outline-variant/20"><img alt="Sentinel AI Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XU9ALxdvqFDy4FlUqPSAZ_z5_JRkiJdGT-KhPWn2WAzy2EYqO0khOSzIOdwGw4hU9cMg1XS3oJMInXt6m-EKrEoKBkH9TGIhSmGUb7fb_vvocqB5qE91q3jyoOK_MzlkptFILIdrLPTDWttMxlgwDP9juYx4u_GdLZeABpx6WXv-fWY3dnsLy9wvdBHgXh0VGiTZ9S9dwv6ELCq5HrfefHKY1psRl1B0JoaQ9QpfdnDNdeifwdT01Brc4"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-headline-md text-title-sm font-bold tracking-wider text-primary truncate">SENTINEL AI</span><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f2fe]"></span></div><span class="font-label-caps text-label-caps text-on-surface-variant truncate uppercase tracking-wider">Tactical Command</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-2xs rounded bg-surface-container-low/70 border border-outline-variant/30 flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">TACTICAL GRID</span><span class="font-label-code text-label-code text-secondary">READY</span></div></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(0,242,254,0.3)]"><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="dashboard" href="/"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">dashboard</span><span class="font-body-md text-body-md tracking-wide">Dashboard</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="risk-analysis" href="/risk"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">analytics</span><span class="font-body-md text-body-md tracking-wide">Risk Analysis</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="citizen-report" href="/citizen-report"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">crisis_alert</span><span class="font-body-md text-body-md tracking-wide">Citizen Report</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="flood-risk-map" href="/map"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">map</span><span class="font-body-md text-body-md tracking-wide">Flood Risk Map</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg transition-all group bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(0,242,254,0.3)]" data-path="historical-data" href="/historical"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">query_stats</span><span class="font-body-md text-body-md tracking-wide">Historical Data</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="about-project" href="/about"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">info</span><span class="font-body-md text-body-md tracking-wide">About Project</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm border-t border-outline-variant/20 bg-surface-container-low/40"><div class="p-space-sm rounded-lg bg-error-container/20 border border-error/30 flex items-center justify-between shadow-[0_0_12px_rgba(239,68,68,0.1)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-error text-[18px] animate-pulse">e911_emergency</span><div class="flex flex-col"><span class="font-label-caps text-label-caps text-error font-bold tracking-wider">HOTLINE 112</span><span class="font-label-code text-[10px] text-on-surface-variant">LEVEL 3 ALERT ACTIVE</span></div></div><span class="material-symbols-outlined text-error text-[18px]">call</span></div><div class="p-space-sm rounded-lg bg-surface-container-high/60 border border-outline-variant/30 flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">AI ENGINE CORE</span><span class="font-label-caps text-label-caps text-secondary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_6px_#4edea3]"></span>ONLINE</span></div><div class="font-label-code text-label-code text-on-surface">Core v2.4 Active</div><div class="font-label-caps text-[10px] text-primary-fixed-dim font-medium">6/6 Neural Models Engaged</div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/20 z-40 px-gutter-desktop flex items-center justify-between shadow-[0_4px_16px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-base min-w-0"><div class="hidden xl:flex flex-col"><span class="font-label-code text-body-sm text-primary font-semibold truncate">Agentic Flood Early Warning &amp; Prevention System</span><span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">PREDICT. PREVENT. PROTECT.</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-primary-fixed-dim text-[18px] pointer-events-none">location_on</span><select class="bg-surface-container-high/80 text-on-surface font-body-sm text-body-sm pl-9 pr-8 py-1.5 rounded-lg border border-outline-variant/40 focus:border-primary-container focus:outline-none appearance-none cursor-pointer hover:border-outline transition-colors"><option>District 4 - Metro Basin (Monitored)</option><option>River Delta North</option><option>Valley Sector 7</option><option>Coastline Zone A</option></select><span class="material-symbols-outlined absolute right-2 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span></div></div><div class="flex items-center gap-space-base"><div class="hidden md:flex items-center gap-space-xs px-space-md py-1 rounded-full bg-secondary-container/20 border border-secondary/30 shadow-[0_0_12px_rgba(78,222,163,0.15)]"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4edea3] animate-ping"></span><span class="font-label-caps text-label-caps text-secondary tracking-wider font-semibold">LIVE TELEMETRY: SYNCHRONIZED</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-high/60 border border-outline-variant/30"><span class="font-label-caps text-label-caps text-on-surface-variant">DEMO</span><button aria-label="Toggle Demo Mode" class="w-9 h-5 rounded-full bg-primary-container/30 border border-primary-container/60 p-0.5 relative transition-colors focus:outline-none" type="button"><div class="w-3.5 h-3.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f2fe] translate-x-4 transition-transform"></div></button></div><div class="hidden lg:flex items-center gap-space-xs px-space-md py-1 rounded-lg bg-surface-container-high/40 border border-outline-variant/20"><span class="material-symbols-outlined text-outline text-[16px]">schedule</span><span class="font-telemetry-value-md text-label-code text-on-surface tracking-wider">UTC 14:32:08</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(0,242,254,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-gutter-desktop py-space-base"><div class="flex flex-col w-full gap-space-lg pb-space-2xl">
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-base">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">LONGITUDINAL TELEMETRY LOG</span>
+<span class="text-outline font-label-code text-label-code">:: CHRONO-CORE 8.4</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight truncate">
+        Historical Flood Records &amp; Longitudinal Analytics
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Comparative multi-year hydrological incident logs and recurrence frequency modeling. Validated against Sentinel AI autonomous response protocols.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-high/80 px-space-md py-space-xs rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">calendar_month</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">SPAN:</span>
+<select class="bg-transparent text-on-surface font-label-code text-label-code focus:outline-none cursor-pointer">
+<option>2015 – 2024</option>
+<option>2018 – 2024</option>
+<option>2020 – 2024</option>
+<option>Past 50 Years</option>
+</select>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high/80 px-space-md py-space-xs rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">waves</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">BASIN:</span>
+<select class="bg-transparent text-on-surface font-label-code text-label-code focus:outline-none cursor-pointer">
+<option>All Basins (Aggregated)</option>
+<option>Metro Basin 4B</option>
+<option>North River Weir</option>
+<option>Industrial Catchment</option>
+</select>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-highest/60 p-1 rounded-lg">
+<button class="flex items-center gap-1 px-space-sm py-1 rounded text-on-surface hover:bg-surface-container-high hover:text-primary transition-colors font-label-code text-label-code" id="btn-export-csv">
+<span class="material-symbols-outlined text-[16px]">csv</span>
+<span>CSV</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded text-on-surface hover:bg-surface-container-high hover:text-primary transition-colors font-label-code text-label-code" id="btn-export-pdf">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>PDF</span>
+</button>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-error/5 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Total Historical Incidents</span>
+<span class="w-8 h-8 rounded-lg bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">flood</span>
+</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-sm">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-primary font-bold">52</span>
+<span class="font-label-code text-label-code text-on-surface-variant">recorded events</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">trending_down</span>
+<span class="font-label-code text-secondary">-38%</span> since 2022 AI roll-out
+        </span>
+<span class="font-label-code text-outline text-[11px]">2015-2024</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-primary-container/5 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Mean Recurrence Interval</span>
+<span class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">update</span>
+</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-sm">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-primary font-bold">1.8</span>
+<span class="font-label-code text-label-code text-on-surface-variant">years (basin avg)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim">POISSON-GAUSSIAN MODEL</span>
+<span class="font-label-code text-outline text-[11px]">σ = ±0.24 yr</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Averted Economic Loss</span>
+<span class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-sm">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-secondary font-bold">$42.6M</span>
+<span class="font-label-code text-label-code text-on-surface-variant">prevented</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="font-label-code text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Sentinel AI Sluice Overrides
+        </span>
+<span class="font-label-code text-outline text-[11px]">8 activations</span>
+</div>
+</div>
+</section>
+<section class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-lg text-headline-md text-primary font-bold">Flood Event Frequency &amp; Max Severity Index by Sector</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim font-label-code text-[11px]">2018–2024</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bar volume depicts cumulative events; color indicates Peak Severity Index (PSI 0.0 – 10.0)</span>
+</div>
+<div class="flex items-center gap-space-md font-label-caps text-label-caps">
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-error"></span>
+<span class="text-on-surface-variant">PSI &gt; 8.0</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-tertiary-fixed-dim"></span>
+<span class="text-on-surface-variant">PSI 5.0 - 7.9</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span class="text-on-surface-variant">PSI &lt; 5.0</span>
+</div>
+</div>
+</div>
+<div class="relative w-full h-80 bg-surface-container-lowest/70 rounded-lg p-space-md flex flex-col justify-between overflow-hidden">
+<div class="absolute inset-x-space-md top-10 flex flex-col justify-between h-56 pointer-events-none opacity-20">
+<div class="w-full h-px bg-on-surface-variant flex items-center justify-end"><span class="font-label-code text-[10px] text-on-surface-variant pr-1">20 EVENTS</span></div>
+<div class="w-full h-px bg-on-surface-variant flex items-center justify-end"><span class="font-label-code text-[10px] text-on-surface-variant pr-1">15 EVENTS</span></div>
+<div class="w-full h-px bg-on-surface-variant flex items-center justify-end"><span class="font-label-code text-[10px] text-on-surface-variant pr-1">10 EVENTS</span></div>
+<div class="w-full h-px bg-on-surface-variant flex items-center justify-end"><span class="font-label-code text-[10px] text-on-surface-variant pr-1">5 EVENTS</span></div>
+<div class="w-full h-px bg-on-surface-variant"></div>
+</div>
+<div class="absolute left-0 right-0 top-28 flex items-center z-10 pointer-events-none px-space-md">
+<div class="w-full h-0.5 bg-secondary-fixed shadow-[0_0_8px_#6ffbbe] opacity-80"></div>
+<span class="absolute right-6 -top-3 px-space-xs py-0.5 rounded bg-surface-container-high text-secondary-fixed font-label-caps text-[10px] shadow-sm tracking-wider">
+          DEFENSE UPGRADE (2022) BENCHMARK
+        </span>
+</div>
+<div class="relative z-20 w-full h-full flex items-end justify-around pt-6 pb-2">
+<div class="group flex flex-col items-center gap-2 w-16 cursor-pointer">
+<span class="font-telemetry-value-md text-body-sm text-error group-hover:scale-110 transition-transform">18</span>
+<div class="w-10 rounded-t-md bg-gradient-to-t from-error-container to-error shadow-[0_0_16px_rgba(239,68,68,0.4)] transition-all duration-300 group-hover:brightness-125" style="height: 190px;"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-code text-[11px] text-primary font-bold truncate max-w-[80px]">Sec 4B</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">METRO BASIN</span>
+</div>
+</div>
+<div class="group flex flex-col items-center gap-2 w-16 cursor-pointer">
+<span class="font-telemetry-value-md text-body-sm text-tertiary-fixed-dim group-hover:scale-110 transition-transform">14</span>
+<div class="w-10 rounded-t-md bg-gradient-to-t from-on-tertiary-container to-tertiary-fixed-dim shadow-[0_0_14px_rgba(255,185,95,0.3)] transition-all duration-300 group-hover:brightness-125" style="height: 148px;"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-code text-[11px] text-primary font-bold truncate max-w-[80px]">North Weir</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">SLUICE GATE</span>
+</div>
+</div>
+<div class="group flex flex-col items-center gap-2 w-16 cursor-pointer">
+<span class="font-telemetry-value-md text-body-sm text-tertiary-fixed-dim group-hover:scale-110 transition-transform">11</span>
+<div class="w-10 rounded-t-md bg-gradient-to-t from-on-tertiary-container/80 to-tertiary-container shadow-[0_0_12px_rgba(255,211,161,0.25)] transition-all duration-300 group-hover:brightness-125" style="height: 116px;"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-code text-[11px] text-primary font-bold truncate max-w-[80px]">Ind. Canal</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">CONFLUENCE</span>
+</div>
+</div>
+<div class="group flex flex-col items-center gap-2 w-16 cursor-pointer">
+<span class="font-telemetry-value-md text-body-sm text-primary-container group-hover:scale-110 transition-transform">7</span>
+<div class="w-10 rounded-t-md bg-gradient-to-t from-on-primary-container to-primary-container shadow-[0_0_10px_rgba(0,242,254,0.25)] transition-all duration-300 group-hover:brightness-125" style="height: 74px;"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-code text-[11px] text-primary font-bold truncate max-w-[80px]">East Res.</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">LOWLAND</span>
+</div>
+</div>
+<div class="group flex flex-col items-center gap-2 w-16 cursor-pointer">
+<span class="font-telemetry-value-md text-body-sm text-secondary group-hover:scale-110 transition-transform">2</span>
+<div class="w-10 rounded-t-md bg-gradient-to-t from-on-secondary-container to-secondary shadow-[0_0_8px_rgba(78,222,163,0.2)] transition-all duration-300 group-hover:brightness-125" style="height: 24px;"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-code text-[11px] text-primary font-bold truncate max-w-[80px]">Highland</span>
+<span class="font-label-caps text-[9px] text-on-surface-variant">RIDGE SLOPES</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-desktop">
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">SECTOR SATELLITE RADAR</span>
+<span class="font-label-code text-[11px] text-secondary">ARCHIVE 2021 PEAK</span>
+</div>
+<div class="relative h-44 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Dark high-resolution satellite thermal map showing dark navy floodwaters spreading across Sector 4B urban grid with bright cyan hydraulic channels and amber hazard contours in tactical control center style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA5RmxXcLsqGqWu_khntBIr4rHlIRO1RvJVcrsf4VQOA0bkH16eZYqHTlqcc_dOyLGIEBonw9aiXNl3nVN0tVz6NepwtwopX3U_Y7-sd9iq3wLJDvzfeiu6g7nw-zfKHT7WPjsLur022Vsk8z3M6hEdpWxMxXpPiB9T18LYiZThfqPPJsOWxiB_XPzHrKUFpo7Un8uV2BtMVwz89qLHAGwUth0yhaBnmp98axNEjAlRbzqXxnO58nE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+<span class="font-label-code text-body-sm text-primary font-semibold">Sector 4B Metro Breach (2021)</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-error font-label-caps text-[10px]">8.4m CREST</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Historical high-water mark resulted in widespread inundation along subway conduits before installation of autonomous subterranean sluice barriers.
+      </p>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">WEIR SPILLWAY RETROFIT</span>
+<span class="font-label-code text-[11px] text-primary-fixed-dim">COMPLETED 2022</span>
+</div>
+<div class="relative h-44 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Night aerial view of massive reinforced concrete hydro dam sluice gates illuminated by cool blue operational floodlights with surging river water engineered control discharge in dark tactical atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC5zYXgCG8On7kHCTuZYiRm1fjFHC5Iz0dgNqokyCLTQImM40X-kmqfDroXnsHCDJKIuTulz7r3-vrI26vd8vxdncdme9NvLL5L3SuRLZU7ACZymPh0PUEZYQt1AQ_O0YD6jAAIxpgaD3tJkby3AT3G6loh4E8HXfgQkwJFjiTsrBKFUjkU4SQpAHfGE5KOoTGtUzfRiRZsNGbaYqOI33HiRWZOOWGvqqy2E6oIQPsgE70fSAJqUrA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between">
+<span class="font-label-code text-body-sm text-primary font-semibold">North Weir Sluice Gate Core</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-secondary font-label-caps text-[10px]">ACTIVE DEFENSE</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Upgraded with dual pneumatic actuators and Sentinel AI agent hooks. Sluice response latency reduced from 45 min manual to 90 sec automatic.
+      </p>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">RECURRENCE PROJECTION</span>
+<span class="font-label-code text-[11px] text-tertiary-fixed-dim">MONTE CARLO (N=10K)</span>
+</div>
+<div class="flex flex-col gap-space-xs my-2">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">10-Year Horizon Probability</span>
+<span class="font-telemetry-value-md text-title-sm text-error font-bold">89.4%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-error rounded" style="width: 89.4%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs my-2">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">50-Year Major Inundation</span>
+<span class="font-telemetry-value-md text-title-sm text-tertiary-fixed-dim font-bold">42.1%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded" style="width: 42.1%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs my-2">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">100-Year Extreme Catastrophe</span>
+<span class="font-telemetry-value-md text-title-sm text-secondary font-bold">14.6%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded" style="width: 14.6%;"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-body-sm text-on-surface-variant font-label-code text-[11px]">
+<span>Model: NeuralHydro v4.1</span>
+<span>Confidence: 96.2%</span>
+</div>
+</div>
+</section>
+<section class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col gap-space-base">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-base">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-title-sm text-primary font-bold">Longitudinal Incident Repository</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-code text-[11px]">4 RECORDS VIEWED</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validated municipal flood events cross-referenced with gauge telemetry.</span>
+</div>
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-highest/80 text-on-surface font-body-sm text-body-sm pl-10 pr-space-base py-2 rounded-lg focus:outline-none focus:bg-surface-container-highest transition-colors placeholder:text-outline" id="table-search" placeholder="Search location or filter causal factor..." type="text"/>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="records-table">
+<thead>
+<tr class="bg-surface-container-lowest/60 text-on-surface-variant font-label-caps text-label-caps">
+<th class="py-space-sm px-space-md">LOCATION</th>
+<th class="py-space-sm px-space-md">FREQUENCY</th>
+<th class="py-space-sm px-space-md">RISK LEVEL</th>
+<th class="py-space-sm px-space-md">LAST FLOOD DATE</th>
+<th class="py-space-sm px-space-md">PEAK WATER LEVEL</th>
+<th class="py-space-sm px-space-md">PRIMARY CAUSAL FACTOR</th>
+<th class="py-space-sm px-space-md">MITIGATION STATUS</th>
+<th class="py-space-sm px-space-md text-right">ACTION</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container-high/40 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface group-hover:text-primary">Metro Basin Sector 4B</span>
+<span class="font-label-code text-[11px] text-outline">LOC-MB-402</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-error/15 text-error font-label-code text-label-code font-bold">18 Events</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-error-container/30 text-error font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                CRITICAL
+              </span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-on-surface">Oct 14, 2023</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-telemetry-value-md text-body-sm text-error font-bold">
+<span>8.4 m</span>
+<span class="font-label-caps text-[10px] text-error">(Breached)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant max-w-[200px] truncate">Cloudburst + Drainage Debris</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-secondary-container/20 text-secondary font-label-code text-[11px]">Reinforced Embankment</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-code text-label-code font-bold hover:shadow-[0_0_12px_#00f2fe] transition-all" onclick="openLogModal('Metro Basin Sector 4B', 'Oct 14, 2023', '8.4 m', '18 Events', 'Reinforced Embankment')">
+                Inspect Log
+              </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface group-hover:text-primary">North Weir Sluice</span>
+<span class="font-label-code text-[11px] text-outline">LOC-NW-118</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-tertiary-container/30 text-on-tertiary-container font-label-code text-label-code font-bold">14 Events</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-tertiary-container/30 text-on-tertiary-container font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                HIGH
+              </span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-on-surface">Jul 22, 2022</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-telemetry-value-md text-body-sm text-tertiary-fixed-dim font-bold">
+<span>7.2 m</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed-dim">(Near Peak)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant max-w-[200px] truncate">Dam Spillway Surge</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-secondary-container/20 text-secondary font-label-code text-[11px]">Automated Gates Installed</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-code text-label-code font-bold hover:shadow-[0_0_12px_#00f2fe] transition-all" onclick="openLogModal('North Weir Sluice', 'Jul 22, 2022', '7.2 m', '14 Events', 'Automated Gates Installed')">
+                Inspect Log
+              </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface group-hover:text-primary">Old Town Bridge</span>
+<span class="font-label-code text-[11px] text-outline">LOC-OT-088</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-tertiary-container/30 text-on-tertiary-container font-label-code text-label-code font-bold">11 Events</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-tertiary-container/30 text-on-tertiary-container font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                MODERATE
+              </span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-on-surface">Nov 03, 2021</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-telemetry-value-md text-body-sm text-primary font-bold">
+<span>5.9 m</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant max-w-[200px] truncate">Sustained Monsoon Inflow</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-error-container/20 text-error font-label-code text-[11px]">Pending Upgrade</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-code text-label-code font-bold hover:shadow-[0_0_12px_#00f2fe] transition-all" onclick="openLogModal('Old Town Bridge', 'Nov 03, 2021', '5.9 m', '11 Events', 'Pending Upgrade')">
+                Inspect Log
+              </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface group-hover:text-primary">South Canal Confluence</span>
+<span class="font-label-code text-[11px] text-outline">LOC-SC-312</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-secondary-container/20 text-secondary font-label-code text-label-code font-bold">7 Events</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                LOW
+              </span>
+</td>
+<td class="py-space-md px-space-md font-label-code text-on-surface">Apr 18, 2020</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-telemetry-value-md text-body-sm text-secondary font-bold">
+<span>4.1 m</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant max-w-[200px] truncate">Tidal Surge Confluence</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded bg-secondary-container/20 text-secondary font-label-code text-[11px]">Automated Gates Installed</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-code text-label-code font-bold hover:shadow-[0_0_12px_#00f2fe] transition-all" onclick="openLogModal('South Canal Confluence', 'Apr 18, 2020', '4.1 m', '7 Events', 'Automated Gates Installed')">
+                Inspect Log
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-body-sm text-on-surface-variant">
+<span class="font-label-code text-[11px]">Displaying 4 of 52 historical event markers</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-code font-label-code disabled:opacity-40" disabled="">PREV</button>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-primary text-label-code font-label-code">1</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-code font-label-code">2</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-code font-label-code">NEXT</button>
+</div>
+</div>
+</section>
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md hidden p-gutter-desktop" id="log-modal">
+<div class="relative w-full max-w-2xl rounded-xl bg-surface-container-high p-space-lg shadow-2xl flex flex-col gap-space-base">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[24px]">terminal</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold" id="modal-title">Hydrological Incident Dossier</h2>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeLogModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm bg-surface-container-lowest/60 p-space-base rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">RECORD DATE</span>
+<span class="font-label-code text-body-sm text-primary font-semibold" id="modal-date">--</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">CREST ELEVATION</span>
+<span class="font-telemetry-value-md text-body-sm text-error font-bold" id="modal-crest">--</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">LIFETIME FREQ</span>
+<span class="font-label-code text-body-sm text-tertiary-fixed-dim font-semibold" id="modal-freq">--</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">STATUS</span>
+<span class="font-label-code text-body-sm text-secondary font-semibold" id="modal-mitigation">--</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant">AGENT TELEMETRY SUMMARY &amp; AUDIT TRAIL</span>
+<div class="p-space-base rounded-lg bg-surface-container-lowest font-label-code text-body-sm text-on-surface space-y-1 overflow-y-auto max-h-40">
+<div class="text-primary-fixed-dim">[T-00:00:00] Runoff accumulation exceeded sensor thresholds (4.2m &gt; 3.8m warning baseline).</div>
+<div class="text-on-surface-variant">[T+00:14:22] Autonomous gate dispatch issued to pneumatic actuator rack B4.</div>
+<div class="text-error">[T+00:38:10] Spillway bypass breached local embankment by 0.4m before full dissipation.</div>
+<div class="text-secondary">[T+01:05:00] Sentinel AI Agent stabilized runoff volume. Total containment time: 1h 42m.</div>
+</div>
+</div>
+<div class="flex justify-end gap-space-sm pt-space-xs border-t border-outline-variant/30">
+<button class="px-space-md py-space-xs rounded bg-surface-container-highest text-on-surface font-label-code text-label-code hover:bg-surface-bright transition-colors" onclick="closeLogModal()">
+          Close Dossier
+        </button>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-code text-label-code font-bold hover:shadow-[0_0_12px_#00f2fe] transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+          Export Full Telemetry Pack
+        </button>
+</div>
+</div>
+</div>
+<script>
+    function openLogModal(loc, date, crest, freq, mitigation) {
+      document.getElementById('modal-title').textContent = loc + ' Incident Dossier';
+      document.getElementById('modal-date').textContent = date;
+      document.getElementById('modal-crest').textContent = crest;
+      document.getElementById('modal-freq').textContent = freq;
+      document.getElementById('modal-mitigation').textContent = mitigation;
+      document.getElementById('log-modal').classList.remove('hidden');
+    }
+
+    function closeLogModal() {
+      document.getElementById('log-modal').classList.add('hidden');
+    }
+
+    document.getElementById('table-search').addEventListener('input', function(e) {
+      const term = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll('#records-table tbody tr');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(term) ? '' : 'none';
+      });
+    });
+
+    document.getElementById('btn-export-csv').addEventListener('click', function() {
+      const original = this.innerHTML;
+      this.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>EXPORTING...</span>';
+      setTimeout(() => {
+        this.innerHTML = '<span class="material-symbols-outlined text-[16px] text-secondary">check</span><span>DOWNLOADED</span>';
+        setTimeout(() => { this.innerHTML = original; }, 2000);
+      }, 700);
+    });
+
+    document.getElementById('btn-export-pdf').addEventListener('click', function() {
+      const original = this.innerHTML;
+      this.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>GENERATING...</span>';
+      setTimeout(() => {
+        this.innerHTML = '<span class="material-symbols-outlined text-[16px] text-secondary">check</span><span>READY</span>';
+        setTimeout(() => { this.innerHTML = original; }, 2000);
+      }, 800);
+    });
+  </script>
+</div></main></div></body></html>

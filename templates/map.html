@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#4edea3","on-tertiary-fixed-variant":"#653e00","on-secondary-container":"#00311f","on-tertiary":"#472a00","on-error-container":"#ffdad6","surface":"#0d131f","surface-container-lowest":"#080e1a","on-background":"#dde2f4","inverse-on-surface":"#2a303e","outline":"#849495","primary-container":"#00f2fe","on-primary-fixed-variant":"#004f53","secondary-fixed-dim":"#4edea3","secondary-fixed":"#6ffbbe","inverse-surface":"#dde2f4","on-tertiary-fixed":"#2a1700","surface-dim":"#0d131f","surface-tint":"#00dce6","primary-fixed":"#6ff6ff","surface-container":"#1a202c","primary":"#e0fdff","surface-container-low":"#161c28","on-primary":"#00373a","on-primary-fixed":"#002022","tertiary-container":"#ffd3a1","surface-container-highest":"#2f3542","on-surface-variant":"#b9cacb","outline-variant":"#3a494b","surface-bright":"#333947","on-primary-container":"#006a70","tertiary":"#fff5ee","on-secondary-fixed-variant":"#005236","surface-variant":"#2f3542","on-secondary-fixed":"#002113","on-tertiary-container":"#875400","on-secondary":"#003824","on-surface":"#dde2f4","inverse-primary":"#00696f","error":"#ffb4ab","tertiary-fixed":"#ffddb8","primary-fixed-dim":"#00dce6","tertiary-fixed-dim":"#ffb95f","error-container":"#93000a","secondary-container":"#00a572","on-error":"#690005","surface-container-high":"#242a37","background":"#0d131f"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-xl":"2rem","space-lg":"1.5rem","margin-mobile":"1rem","margin-desktop":"2rem","space-2xs":"0.125rem","space-sm":"0.5rem","space-2xl":"3rem","gutter-desktop":"1.25rem","gutter-mobile":"0.75rem","space-base":"1rem","space-md":"0.75rem"},fontFamily:{"telemetry-value-lg":["JetBrains Mono"],"display-hero-mobile":["Space Grotesk"],"body-md":["Inter"],"headline-lg":["Space Grotesk"],"display-hero":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"title-sm":["Inter"],"telemetry-value-md":["JetBrains Mono"],"body-sm":["Inter"],"label-code":["JetBrains Mono"],"body-lg":["Inter"],"headline-xl":["Space Grotesk"],"label-caps":["JetBrains Mono"],"headline-md":["Space Grotesk"]},fontSize:{"telemetry-value-lg":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"telemetry-value-md":["20px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-code":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest/90 backdrop-blur-xl z-50 flex flex-col justify-between border-r border-outline-variant/30 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="flex flex-col"><div class="h-16 flex items-center px-space-base gap-space-sm border-b border-outline-variant/20"><img alt="Sentinel AI Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XU9ALxdvqFDy4FlUqPSAZ_z5_JRkiJdGT-KhPWn2WAzy2EYqO0khOSzIOdwGw4hU9cMg1XS3oJMInXt6m-EKrEoKBkH9TGIhSmGUb7fb_vvocqB5qE91q3jyoOK_MzlkptFILIdrLPTDWttMxlgwDP9juYx4u_GdLZeABpx6WXv-fWY3dnsLy9wvdBHgXh0VGiTZ9S9dwv6ELCq5HrfefHKY1psRl1B0JoaQ9QpfdnDNdeifwdT01Brc4"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-headline-md text-title-sm font-bold tracking-wider text-primary truncate">SENTINEL AI</span><span class="w-1.5 h-1.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f2fe]"></span></div><span class="font-label-caps text-label-caps text-on-surface-variant truncate uppercase tracking-wider">Tactical Command</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-2xs rounded bg-surface-container-low/70 border border-outline-variant/30 flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">TACTICAL GRID</span><span class="font-label-code text-label-code text-secondary">READY</span></div></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(0,242,254,0.3)]"><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="dashboard" href="/"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">dashboard</span><span class="font-body-md text-body-md tracking-wide">Dashboard</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="risk-analysis" href="/risk"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">analytics</span><span class="font-body-md text-body-md tracking-wide">Risk Analysis</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="citizen-report" href="/citizen-report"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">crisis_alert</span><span class="font-body-md text-body-md tracking-wide">Citizen Report</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg transition-all group bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(0,242,254,0.3)]" data-path="flood-risk-map" href="/map"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">map</span><span class="font-body-md text-body-md tracking-wide">Flood Risk Map</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="historical-data" href="/historical"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">query_stats</span><span class="font-body-md text-body-md tracking-wide">Historical Data</span></a><a class="flex items-center gap-space-md px-space-base py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="about-project" href="/about"><span class="material-symbols-outlined text-[20px] transition-colors group-hover:text-primary-fixed-dim">info</span><span class="font-body-md text-body-md tracking-wide">About Project</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm border-t border-outline-variant/20 bg-surface-container-low/40"><div class="p-space-sm rounded-lg bg-error-container/20 border border-error/30 flex items-center justify-between shadow-[0_0_12px_rgba(239,68,68,0.1)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-error text-[18px] animate-pulse">e911_emergency</span><div class="flex flex-col"><span class="font-label-caps text-label-caps text-error font-bold tracking-wider">HOTLINE 112</span><span class="font-label-code text-[10px] text-on-surface-variant">LEVEL 3 ALERT ACTIVE</span></div></div><span class="material-symbols-outlined text-error text-[18px]">call</span></div><div class="p-space-sm rounded-lg bg-surface-container-high/60 border border-outline-variant/30 flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">AI ENGINE CORE</span><span class="font-label-caps text-label-caps text-secondary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_6px_#4edea3]"></span>ONLINE</span></div><div class="font-label-code text-label-code text-on-surface">Core v2.4 Active</div><div class="font-label-caps text-[10px] text-primary-fixed-dim font-medium">6/6 Neural Models Engaged</div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/20 z-40 px-gutter-desktop flex items-center justify-between shadow-[0_4px_16px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-base min-w-0"><div class="hidden xl:flex flex-col"><span class="font-label-code text-body-sm text-primary font-semibold truncate">Agentic Flood Early Warning &amp; Prevention System</span><span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">PREDICT. PREVENT. PROTECT.</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-primary-fixed-dim text-[18px] pointer-events-none">location_on</span><select class="bg-surface-container-high/80 text-on-surface font-body-sm text-body-sm pl-9 pr-8 py-1.5 rounded-lg border border-outline-variant/40 focus:border-primary-container focus:outline-none appearance-none cursor-pointer hover:border-outline transition-colors"><option>District 4 - Metro Basin (Monitored)</option><option>River Delta North</option><option>Valley Sector 7</option><option>Coastline Zone A</option></select><span class="material-symbols-outlined absolute right-2 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span></div></div><div class="flex items-center gap-space-base"><div class="hidden md:flex items-center gap-space-xs px-space-md py-1 rounded-full bg-secondary-container/20 border border-secondary/30 shadow-[0_0_12px_rgba(78,222,163,0.15)]"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4edea3] animate-ping"></span><span class="font-label-caps text-label-caps text-secondary tracking-wider font-semibold">LIVE TELEMETRY: SYNCHRONIZED</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-high/60 border border-outline-variant/30"><span class="font-label-caps text-label-caps text-on-surface-variant">DEMO</span><button aria-label="Toggle Demo Mode" class="w-9 h-5 rounded-full bg-primary-container/30 border border-primary-container/60 p-0.5 relative transition-colors focus:outline-none" type="button"><div class="w-3.5 h-3.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f2fe] translate-x-4 transition-transform"></div></button></div><div class="hidden lg:flex items-center gap-space-xs px-space-md py-1 rounded-lg bg-surface-container-high/40 border border-outline-variant/20"><span class="material-symbols-outlined text-outline text-[16px]">schedule</span><span class="font-telemetry-value-md text-label-code text-on-surface tracking-wider">UTC 14:32:08</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(0,242,254,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-gutter-desktop py-space-base"><div class="flex flex-col w-full gap-space-md">
+<!-- Map Top Control & Filtering Bar -->
+<div class="w-full bg-surface-container-low/90 backdrop-blur-xl p-space-md rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-base">
+<!-- Search & Coordinates Bar -->
+<div class="relative flex-1 min-w-[280px] max-w-xl">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary-fixed-dim text-[18px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-10 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container transition-all placeholder:text-on-surface-variant/50" id="geoSearchInput" placeholder="Search coordinates, ward, or critical landmark..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant/60 text-[18px] cursor-pointer hover:text-primary-fixed-dim">my_location</span>
+</div>
+<!-- View Modes & Projections -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-3 py-1.5 rounded text-on-primary-container bg-primary-container font-label-code text-label-code shadow-sm font-semibold transition-all" id="view2dBtn">
+          2D Vector
+        </button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-code text-label-code transition-all" id="view3dBtn">
+          3D Elevation
+        </button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface flex items-center gap-1 font-label-code text-label-code transition-all" id="viewSarBtn">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed shadow-[0_0_8px_#6ffbbe]"></span>
+          SAR Heatmap
+        </button>
+</div>
+<!-- Zoom & Spatial Tools -->
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" id="zoomInBtn" title="Zoom In">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" id="zoomOutBtn" title="Zoom Out">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<button class="px-2.5 h-8 rounded-lg bg-surface-container flex items-center gap-1 text-on-surface-variant hover:text-on-surface text-label-caps font-label-caps" id="resetViewBtn" title="Re-center Metro Area">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+          RESET
+        </button>
+</div>
+</div>
+<!-- Severity Category Toggles & Sub-layer Filters -->
+<div class="flex flex-wrap items-center justify-between gap-space-base pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-error-container/30 text-on-background font-label-code text-label-code shadow-sm transition-all" data-state="active" id="filterHigh">
+<span class="w-2.5 h-2.5 rounded-full bg-error shadow-[0_0_8px_#ffb4ab] animate-pulse"></span>
+<span class="font-bold">High Risk</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error/30 text-error font-semibold text-[10px]">4</span>
+</button>
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-tertiary-container/20 text-on-background font-label-code text-label-code shadow-sm transition-all" data-state="active" id="filterMed">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim shadow-[0_0_8px_#ffb95f]"></span>
+<span class="font-semibold">Medium Risk</span>
+<span class="px-1.5 py-0.2 rounded-full bg-tertiary-fixed-dim/20 text-tertiary-fixed-dim font-semibold text-[10px]">7</span>
+</button>
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-secondary-container/20 text-on-background font-label-code text-label-code shadow-sm transition-all" data-state="active" id="filterLow">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_8px_#4edea3]"></span>
+<span class="font-semibold">Low Risk</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary/20 text-secondary font-semibold text-[10px]">12</span>
+</button>
+</div>
+<!-- Infrastructure Sub-layers -->
+<div class="flex flex-wrap items-center gap-space-md font-label-code text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer hover:text-on-surface select-none">
+<input checked="" class="accent-primary-container w-3.5 h-3.5 rounded cursor-pointer" id="layerBuoys" type="checkbox"/>
+<span>Telemetry Buoys</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer hover:text-on-surface select-none">
+<input checked="" class="accent-primary-container w-3.5 h-3.5 rounded cursor-pointer" id="layerDrainage" type="checkbox"/>
+<span>Drainage Infrastructure</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer hover:text-on-surface select-none">
+<input checked="" class="accent-primary-container w-3.5 h-3.5 rounded cursor-pointer" id="layerEvac" type="checkbox"/>
+<span>Evacuation Routes</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Primary Tactical Map Canvas Container -->
+<div class="relative w-full h-[760px] rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest select-none group">
+<!-- Base Vector Terrain & Waterway SVG Canvas -->
+<div class="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing transition-transform duration-300" id="gisMapViewport">
+<svg class="w-full h-full" preserveaspectratio="xMidYMid slice" viewbox="0 0 1400 850" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Tactical Map Grid Pattern -->
+<pattern height="60" id="tacticalGrid" patternunits="userSpaceOnUse" width="60">
+<path d="M 60 0 L 0 0 0 60" fill="none" stroke="#3a494b" stroke-opacity="0.25" stroke-width="0.5"></path>
+<circle cx="60" cy="60" fill="#00dce6" fill-opacity="0.3" r="1"></circle>
+</pattern>
+<!-- Water Depth & Velocity Gradient -->
+<lineargradient id="riverGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#081b33"></stop>
+<stop offset="50%" stop-color="#0e345e"></stop>
+<stop offset="100%" stop-color="#09203f"></stop>
+</lineargradient>
+<!-- Overflow Chokepoint Pulse Fill -->
+<radialgradient cx="50%" cy="50%" id="surgePulseZone" r="50%">
+<stop offset="0%" stop-color="#93000a" stop-opacity="0.65"></stop>
+<stop offset="60%" stop-color="#ffb4ab" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#93000a" stop-opacity="0"></stop>
+</radialgradient>
+<!-- Saturated Soil Moderate Glow -->
+<radialgradient cx="50%" cy="50%" id="moderateSoilZone" r="50%">
+<stop offset="0%" stop-color="#875400" stop-opacity="0.55"></stop>
+<stop offset="70%" stop-color="#ffd3a1" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#875400" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<!-- Base Topography Fill & Grids -->
+<rect fill="#0a0f1d" height="100%" width="100%"></rect>
+<rect fill="url(#tacticalGrid)" height="100%" width="100%"></rect>
+<!-- Elevation / Contour Lines (Hypsometric tactical lines) -->
+<g fill="none" stroke="#3a494b" stroke-opacity="0.3" stroke-width="1">
+<path d="M-50,180 C200,120 400,240 680,190 C960,140 1200,280 1450,210"></path>
+<path d="M-50,280 C250,210 480,360 760,280 C1040,200 1280,390 1450,320"></path>
+<path d="M-50,450 C220,380 430,510 720,440 C1010,370 1240,540 1450,480" stroke-dasharray="4 6"></path>
+<path d="M-50,620 C280,560 510,720 830,640 C1120,560 1310,710 1450,660"></path>
+<path d="M-50,750 C290,700 560,820 900,740 C1180,680 1360,810 1450,780" stroke-opacity="0.15"></path>
+</g>
+<!-- High-Risk Flood Polygon Zones (Surge footprints) -->
+<g id="layerHighRiskFootprints">
+<path d="M 440,320 C 490,290 590,310 630,360 C 660,400 640,460 590,480 C 530,500 460,470 430,420 Z" fill="url(#surgePulseZone)"></path>
+<circle cx="890" cy="240" fill="url(#surgePulseZone)" r="90"></circle>
+<path d="M 970,520 C 1030,490 1120,510 1140,570 C 1150,630 1090,670 1020,680 C 960,670 940,600 970,520 Z" fill="url(#surgePulseZone)"></path>
+</g>
+<!-- Medium-Risk Saturation Footprints -->
+<g id="layerMedRiskFootprints">
+<circle cx="280" cy="460" fill="url(#moderateSoilZone)" r="85"></circle>
+<path d="M 720,560 C 790,540 850,580 870,640 C 880,700 810,740 750,730 C 690,720 680,620 720,560 Z" fill="url(#moderateSoilZone)"></path>
+</g>
+<!-- Main Hydraulic System: Primary River Spine & Estuary Branches -->
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<!-- River Bed Base -->
+<path d="M-20,120 Q 280,180 470,270 T 780,390 T 1030,520 T 1450,610" stroke="url(#riverGradient)" stroke-width="52"></path>
+<path d="M 780,390 Q 820,530 890,640 T 960,860" stroke="url(#riverGradient)" stroke-width="32"></path>
+<path d="M 470,270 Q 520,110 590,-20" stroke="url(#riverGradient)" stroke-width="24"></path>
+<!-- Stream Centerlines & Vector Direction Arrows -->
+<path d="M-20,120 Q 280,180 470,270 T 780,390 T 1030,520 T 1450,610" stroke="#00f2fe" stroke-dasharray="14 10" stroke-opacity="0.75" stroke-width="3"></path>
+<path d="M 780,390 Q 820,530 890,640 T 960,860" stroke="#00dce6" stroke-dasharray="10 8" stroke-opacity="0.65" stroke-width="2.5"></path>
+</g>
+<!-- Drainage Infrastructure Vectors (Culverts & Underground Relief) -->
+<g fill="none" id="drainageNetworkLayer" stroke="#4edea3" stroke-dasharray="4 4" stroke-opacity="0.45" stroke-width="2">
+<path d="M 520,380 L 480,480 L 360,510"></path>
+<path d="M 820,380 L 890,300 L 980,310"></path>
+<path d="M 760,420 L 730,520 L 650,560"></path>
+<path d="M 1030,520 L 1120,470 L 1230,500"></path>
+</g>
+<!-- Dynamic Evacuation Corridors -->
+<g fill="none" id="evacRoutesLayer" stroke="#ffddb8" stroke-linecap="round" stroke-opacity="0.8" stroke-width="3.5">
+<path d="M 540,420 L 590,440 L 680,410 L 740,320 L 790,260 L 880,210" stroke-dasharray="8 6"></path>
+<path d="M 980,590 L 1080,560 L 1180,420 L 1280,380" stroke-dasharray="8 6"></path>
+<!-- Flow arrows on evac path -->
+<polygon fill="#ffddb8" points="740,320 735,330 748,328"></polygon>
+<polygon fill="#ffddb8" points="880,210 872,219 885,221"></polygon>
+</g>
+<!-- Telemetry Buoys on River Vectors -->
+<g id="sensorBuoysLayer">
+<g transform="translate(360, 218)">
+<circle fill="#00f2fe" r="6"></circle>
+<circle class="animate-ping" fill="none" r="14" stroke="#00f2fe" stroke-opacity="0.5" stroke-width="1.5"></circle>
+</g>
+<g transform="translate(680, 345)">
+<circle fill="#00f2fe" r="6"></circle>
+<circle class="animate-ping" fill="none" r="14" stroke="#00f2fe" stroke-opacity="0.5" stroke-width="1.5"></circle>
+</g>
+<g transform="translate(920, 460)">
+<circle fill="#00f2fe" r="6"></circle>
+<circle class="animate-ping" fill="none" r="12" stroke="#00f2fe" stroke-opacity="0.5" stroke-width="1.5"></circle>
+</g>
+<g transform="translate(1260, 575)">
+<circle fill="#00f2fe" r="6"></circle>
+<circle class="animate-ping" fill="none" r="14" stroke="#00f2fe" stroke-opacity="0.5" stroke-width="1.5"></circle>
+</g>
+</g>
+</svg>
+<!-- Geospatial Interactive Pins / Tactical HTML Markers -->
+<div class="absolute inset-0 pointer-events-none" id="pinsOverlayContainer">
+<!-- PIN 1: Sector 4B - Downtown Underpass (High Risk) -->
+<div class="absolute top-[44%] left-[38%] pointer-events-auto -translate-x-1/2 -translate-y-1/2 cursor-pointer pin-marker group/pin" data-id="sec-4b" data-risk="high">
+<div class="relative flex items-center justify-center">
+<!-- Pulsing Halo Rings -->
+<span class="absolute w-12 h-12 rounded-full bg-error/30 animate-ping"></span>
+<span class="absolute w-8 h-8 rounded-full bg-error/40 shadow-[0_0_18px_#ffb4ab]"></span>
+<!-- Pin Badge -->
+<div class="relative w-7 h-7 rounded-full bg-error text-surface-container-lowest flex items-center justify-center shadow-lg font-label-code text-[11px] font-bold ring-2 ring-surface">
+              4B
+            </div>
+</div>
+<!-- Label taglet -->
+<div class="absolute left-1/2 -translate-x-1/2 top-8 px-2 py-0.5 rounded bg-surface-container-lowest/95 backdrop-blur-md border border-error/50 whitespace-nowrap shadow-md">
+<span class="font-label-caps text-[10px] text-error font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+              SEC 4B • 87% RISK
+            </span>
+</div>
+</div>
+<!-- PIN 2: North River Weir (High Risk) -->
+<div class="absolute top-[28%] left-[63%] pointer-events-auto -translate-x-1/2 -translate-y-1/2 cursor-pointer pin-marker" data-id="weir-n" data-risk="high">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-10 h-10 rounded-full bg-error/30 animate-ping"></span>
+<span class="absolute w-6 h-6 rounded-full bg-error/40"></span>
+<div class="relative w-6 h-6 rounded-full bg-error text-surface-container-lowest flex items-center justify-center shadow-md font-label-code text-[10px] font-bold">
+              NW
+            </div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 top-7 px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-md whitespace-nowrap shadow">
+<span class="font-label-caps text-[9px] text-error font-semibold">WEIR OVERFLOW • 84%</span>
+</div>
+</div>
+<!-- PIN 3: Industrial Canal Junction (High Risk) -->
+<div class="absolute top-[68%] left-[72%] pointer-events-auto -translate-x-1/2 -translate-y-1/2 cursor-pointer pin-marker" data-id="canal-ind" data-risk="high">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-10 h-10 rounded-full bg-error/30 animate-ping"></span>
+<div class="relative w-6 h-6 rounded-full bg-error text-surface-container-lowest flex items-center justify-center shadow font-label-code text-[10px] font-bold">
+              IJ
+            </div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 top-7 px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-md whitespace-nowrap shadow">
+<span class="font-label-caps text-[9px] text-error font-semibold">CHOKEPOINT • 79%</span>
+</div>
+</div>
+<!-- PIN 4: Market District (Medium Risk) -->
+<div class="absolute top-[54%] left-[20%] pointer-events-auto -translate-x-1/2 -translate-y-1/2 cursor-pointer pin-marker" data-id="mkt-dist" data-risk="med">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-7 h-7 rounded-full bg-tertiary-fixed-dim/30"></span>
+<div class="relative w-5 h-5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center shadow font-label-code text-[10px] font-bold">
+              MD
+            </div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 top-6 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 whitespace-nowrap">
+<span class="font-label-caps text-[9px] text-tertiary-fixed-dim">PONDING • 58%</span>
+</div>
+</div>
+<!-- PIN 5: East Residential Basin (Medium Risk) -->
+<div class="absolute top-[75%] left-[54%] pointer-events-auto -translate-x-1/2 -translate-y-1/2 cursor-pointer pin-marker" data-id="east-res" data-risk="med">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-7 h-7 rounded-full bg-tertiary-fixed-dim/30"></span>
+<div class="relative w-5 h-5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center shadow font-label-code text-[10px] font-bold">
+              ER
+            </div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 top-6 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 whitespace-nowrap">
+<span class="font-label-caps text-[9px] text-tertiary-fixed-dim">SATURATED • 52%</span>
+</div>
+</div>
+<!-- PIN 6: Highland Ridge Ward (Low Risk) -->
+<div class="absolute top-[22%] left-[24%] pointer-events-auto -translate-x-1/2 -translate-y-1/2 cursor-pointer pin-marker" data-id="high-ridge" data-risk="low">
+<div class="relative flex items-center justify-center">
+<div class="w-4 h-4 rounded-full bg-secondary shadow flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 top-5 px-1.5 py-0.2 rounded bg-surface-container-lowest/80 whitespace-nowrap">
+<span class="font-label-caps text-[9px] text-secondary">RIDGE • 14%</span>
+</div>
+</div>
+<!-- PIN 7: West Plateau Park (Low Risk) -->
+<div class="absolute top-[35%] left-[84%] pointer-events-auto -translate-x-1/2 -translate-y-1/2 cursor-pointer pin-marker" data-id="west-plat" data-risk="low">
+<div class="relative flex items-center justify-center">
+<div class="w-4 h-4 rounded-full bg-secondary shadow flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 top-5 px-1.5 py-0.2 rounded bg-surface-container-lowest/80 whitespace-nowrap">
+<span class="font-label-caps text-[9px] text-secondary">DRY • 18%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FLOATING TOP-RIGHT: Tactical Glassmorphic Legend Card -->
+<div class="absolute top-4 right-4 z-20 w-80 bg-surface-container-low/90 backdrop-blur-xl p-space-base rounded-xl shadow-2xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-headline-md text-title-sm font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">layers</span>
+          Risk Classification
+        </span>
+<span class="font-label-code text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">HEC-RAS 6.1</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm font-body-sm">
+<div class="p-space-xs rounded bg-surface-container-lowest/60 flex items-start gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error mt-1 flex-shrink-0 shadow-[0_0_6px_#ffb4ab]"></span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-error font-bold">CRITICAL / SEVERE (&gt;75%)</span>
+<span class="text-on-surface-variant text-[11px] leading-snug">Imminent spillway breach. Auto-barriers active. Mandatory evacuation.</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/60 flex items-start gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim mt-1 flex-shrink-0 shadow-[0_0_6px_#ffb95f]"></span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim font-semibold">MODERATE / ALERT (40-75%)</span>
+<span class="text-on-surface-variant text-[11px] leading-snug">Sump &amp; storm drain capacity stressed. Mobile pumps pre-positioned.</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest/60 flex items-start gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary mt-1 flex-shrink-0 shadow-[0_0_6px_#4edea3]"></span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary font-semibold">NOMINAL / SAFE (&lt;40%)</span>
+<span class="text-on-surface-variant text-[11px] leading-snug">Continuous sensor cadence. Standard runoff absorption.</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs mt-1 flex items-center justify-between text-on-surface-variant font-label-code text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Acoustic Buoys</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-block w-4 h-0.5 bg-primary-container"></span>
+<span>Vector Flow</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-block w-4 h-0.5 border-b border-dashed border-tertiary-fixed"></span>
+<span>Evac Corridors</span>
+</div>
+</div>
+</div>
+<!-- FLOATING BOTTOM-LEFT: Selected Zone Interactive Detail Card (Sector 4B Downtown Underpass) -->
+<div class="absolute bottom-12 left-4 z-20 w-96 bg-surface-container-low/95 backdrop-blur-2xl p-space-base rounded-xl shadow-2xl transition-all duration-300" id="zoneDetailCard">
+<!-- Card Header: Zone Title & Status Alert -->
+<div class="flex items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-caps text-label-caps text-error font-bold uppercase tracking-wider">CRITICAL THREAT ZONE</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold tracking-tight" id="detailZoneTitle">
+            Sector 4B • Downtown Underpass
+          </h2>
+<span class="font-label-code text-[11px] text-on-surface-variant" id="detailCoords">
+            37°46'29.4"N 122°25'10.2"W • Basin Level 3
+          </span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" id="closeDetailCard">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Real-Time Metrics Bento Panel -->
+<div class="grid grid-cols-2 gap-space-xs my-space-sm">
+<!-- Live Depth Readout -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/80 flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">WATER DEPTH</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-error">1.42</span>
+<span class="font-label-code text-label-code text-on-surface-variant">meters</span>
+</div>
+<span class="font-label-code text-[10px] text-error flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +0.22m/hr surge
+          </span>
+</div>
+<!-- Failure Probability Readout -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/80 flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">RISK PROBABILITY</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-error">87.4</span>
+<span class="font-label-code text-label-code text-error">%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden mt-1">
+<div class="h-full bg-error rounded-full w-[87%]"></div>
+</div>
+</div>
+</div>
+<!-- Real-Time Sensor Telemetry Summary -->
+<div class="p-space-xs rounded-lg bg-surface-container-high/40 flex flex-col gap-1 text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-code text-[11px]">Hydraulic Gate G-04:</span>
+<span class="font-label-code text-[11px] text-error font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> 100% CLOSED (LOCKED)
+          </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-code text-[11px]">Auxiliary Sump Flow:</span>
+<span class="font-label-code text-[11px] text-primary">48.2 m³/sec (Max Capacity)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-code text-[11px]">Citizen Reports (15m):</span>
+<span class="font-label-code text-[11px] text-tertiary-fixed-dim">14 Confirmed Submersions</span>
+</div>
+</div>
+<!-- Action Dispatch Row -->
+<div class="flex items-center gap-space-xs pt-space-md">
+<button class="flex-1 py-2 rounded-lg bg-error text-surface-container-lowest font-body-md text-body-md font-bold tracking-wide hover:brightness-110 shadow-lg shadow-error/20 flex items-center justify-center gap-1 transition-all" id="dispatchEvacBtn">
+<span class="material-symbols-outlined text-[18px]">emergency_share</span>
+          BROADCAST EVACUATION
+        </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" id="inspectTelemetryBtn" title="Deep Telemetry Diagnostics">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</div>
+</div>
+<!-- Live Aerial View Mini-Card (Satellite context prompt placeholder) -->
+<div class="absolute top-4 left-4 z-10 w-52 rounded-lg overflow-hidden shadow-xl bg-surface-container-lowest/90 backdrop-blur-md flex flex-col">
+<div class="relative w-full h-24 bg-cover bg-center" data-alt="High-resolution synthetic aperture radar (SAR) satellite reconnaissance imagery of urban river basin at night, showing false-color cyan reflective water surfaces, flooded street grids, infrared heat signatures of embankments, and topological contour lines under low light conditions." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCj-p4iHRt7fuSW4R0eBLdsH5fcZzyII909K7DZM4-5dtoe-cLSUiXvC25DKuZTzXJFPU19w8KSGTpKVxqCYEZsJZWYe78nusGigoTaoiWTl3veAcN8a2YpxUwZnyRA9GCu0quHRXAuzFs2S4xorSxLUTtb6Q7kwSYrmJQ8cCIEMDn0VLJxTGXuUnSmW0zDks73OmCGMGCWaH_ACKQeqxH_zS7B82LS9juKjrf_C8y0f7SiQzF5ii3C')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute top-1.5 left-2 px-1.5 py-0.2 rounded bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-caps text-[9px] text-primary-fixed-dim flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+            SAR PASS #4029
+          </span>
+</div>
+</div>
+<div class="p-2 flex items-center justify-between">
+<span class="font-label-code text-[10px] text-on-surface-variant">RESOLUTION: 0.5m/px</span>
+<span class="font-label-code text-[10px] text-secondary font-semibold">SPECTRAL SYNC</span>
+</div>
+</div>
+<!-- FLOATING BOTTOM STATUS TICKER -->
+<div class="absolute bottom-0 left-0 right-0 h-9 bg-surface-container-lowest/95 backdrop-blur-xl z-20 px-space-base flex items-center justify-between shadow-2xl">
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-code text-body-sm">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4edea3]"></span>
+<span class="font-semibold text-[11px]">Satellite Radar Sync: 45 sec ago</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">satellite_alt</span>
+<span>Next SAR pass in 12m 18s (Sentinel-1C Orbit)</span>
+</div>
+<span class="text-outline-variant hidden md:inline">•</span>
+<div class="hidden md:flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">waves</span>
+<span>River Delta Discharge: 1,840 m³/s (Crest Warning)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm font-label-code text-[11px]">
+<span class="text-on-surface-variant">Hydraulic Model:</span>
+<span class="text-primary font-bold">2.4-NEURAL (99.2% Accuracy)</span>
+</div>
+</div>
+</div>
+<!-- Bottom Secondary Telemetry Row: Rapid Target Dispatch -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md w-full">
+<!-- Active Critical Zone Mini-Card -->
+<div class="p-space-base rounded-xl bg-surface-container-low/80 backdrop-blur-md shadow-lg flex flex-col justify-between cursor-pointer hover:bg-surface-container-high/70 transition-all" onclick="selectZoneData('sec-4b')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error shadow-[0_0_8px_#ffb4ab]"></span>
+<span class="font-label-code text-title-sm font-bold text-on-surface">Sector 4B Underpass</span>
+</div>
+<span class="font-label-caps text-label-caps text-error bg-error/10 px-2 py-0.5 rounded">CRITICAL</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="text-body-sm text-on-surface-variant">Live Depth: <strong class="text-on-surface font-label-code">1.42m</strong></span>
+<span class="text-body-sm text-on-surface-variant">Est. Breach: <strong class="text-error font-label-code">14 mins</strong></span>
+</div>
+</div>
+<!-- North River Weir Mini-Card -->
+<div class="p-space-base rounded-xl bg-surface-container-low/80 backdrop-blur-md shadow-lg flex flex-col justify-between cursor-pointer hover:bg-surface-container-high/70 transition-all" onclick="selectZoneData('weir-n')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error shadow-[0_0_8px_#ffb4ab]"></span>
+<span class="font-label-code text-title-sm font-bold text-on-surface">North River Weir</span>
+</div>
+<span class="font-label-caps text-label-caps text-error bg-error/10 px-2 py-0.5 rounded">SPILLWAY OVERFLOW</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="text-body-sm text-on-surface-variant">Live Depth: <strong class="text-on-surface font-label-code">2.88m</strong></span>
+<span class="text-body-sm text-on-surface-variant">Gate Status: <strong class="text-primary font-label-code">90% Auto-open</strong></span>
+</div>
+</div>
+<!-- Industrial Canal Mini-Card -->
+<div class="p-space-base rounded-xl bg-surface-container-low/80 backdrop-blur-md shadow-lg flex flex-col justify-between cursor-pointer hover:bg-surface-container-high/70 transition-all" onclick="selectZoneData('canal-ind')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim shadow-[0_0_8px_#ffb95f]"></span>
+<span class="font-label-code text-title-sm font-bold text-on-surface">Industrial Canal Chokepoint</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim bg-tertiary-fixed-dim/10 px-2 py-0.5 rounded">CHOKEPOINT</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="text-body-sm text-on-surface-variant">Live Depth: <strong class="text-on-surface font-label-code">1.94m</strong></span>
+<span class="text-body-sm text-on-surface-variant">Velocity: <strong class="text-tertiary-fixed-dim font-label-code">3.2 m/s</strong></span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tactical GIS Map Interactivity & Layer Toggles
+  (function initTacticalGisMap() {
+    // 1. Severity Filter Toggles
+    const filterHigh = document.getElementById('filterHigh');
+    const filterMed = document.getElementById('filterMed');
+    const filterLow = document.getElementById('filterLow');
+    const pins = document.querySelectorAll('.pin-marker');
+    const highFootprints = document.getElementById('layerHighRiskFootprints');
+    const medFootprints = document.getElementById('layerMedRiskFootprints');
+
+    function applyFilters() {
+      const showHigh = filterHigh.getAttribute('data-state') === 'active';
+      const showMed = filterMed.getAttribute('data-state') === 'active';
+      const showLow = filterLow.getAttribute('data-state') === 'active';
+
+      pins.forEach(pin => {
+        const risk = pin.getAttribute('data-risk');
+        if (risk === 'high') pin.style.display = showHigh ? 'block' : 'none';
+        if (risk === 'med') pin.style.display = showMed ? 'block' : 'none';
+        if (risk === 'low') pin.style.display = showLow ? 'block' : 'none';
+      });
+
+      if (highFootprints) highFootprints.style.display = showHigh ? 'block' : 'none';
+      if (medFootprints) medFootprints.style.display = showMed ? 'block' : 'none';
+    }
+
+    [filterHigh, filterMed, filterLow].forEach(btn => {
+      btn.addEventListener('click', () => {
+        const current = btn.getAttribute('data-state');
+        const next = current === 'active' ? 'inactive' : 'active';
+        btn.setAttribute('data-state', next);
+        if (next === 'inactive') {
+          btn.classList.add('opacity-40');
+        } else {
+          btn.classList.remove('opacity-40');
+        }
+        applyFilters();
+      });
+    });
+
+    // 2. Sub-layer Checkboxes
+    const layerBuoys = document.getElementById('layerBuoys');
+    const layerDrainage = document.getElementById('layerDrainage');
+    const layerEvac = document.getElementById('layerEvac');
+    const buoysSvg = document.getElementById('sensorBuoysLayer');
+    const drainageSvg = document.getElementById('drainageNetworkLayer');
+    const evacSvg = document.getElementById('evacRoutesLayer');
+
+    if (layerBuoys && buoysSvg) {
+      layerBuoys.addEventListener('change', (e) => {
+        buoysSvg.style.display = e.target.checked ? 'block' : 'none';
+      });
+    }
+    if (layerDrainage && drainageSvg) {
+      layerDrainage.addEventListener('change', (e) => {
+        drainageSvg.style.display = e.target.checked ? 'block' : 'none';
+      });
+    }
+    if (layerEvac && evacSvg) {
+      layerEvac.addEventListener('change', (e) => {
+        evacSvg.style.display = e.target.checked ? 'block' : 'none';
+      });
+    }
+
+    // 3. Zone Telemetry Data Dictionary for Interactive Cards
+    window.zoneTelemetryStore = {
+      'sec-4b': {
+        title: 'Sector 4B • Downtown Underpass',
+        coords: '37°46\'29.4"N 122°25\'10.2"W • Basin Level 3',
+        depth: '1.42',
+        risk: '87.4',
+        gate: '100% CLOSED (LOCKED)',
+        flow: '48.2 m³/sec (Max Capacity)'
+      },
+      'weir-n': {
+        title: 'North River Weir Facility',
+        coords: '37°48\'12.1"N 122°23\'44.8"W • Crest Level 4',
+        depth: '2.88',
+        risk: '84.1',
+        gate: '90% OVERFLOW ACTIVE',
+        flow: '142.6 m³/sec (Surge Crest)'
+      },
+      'canal-ind': {
+        title: 'Industrial Canal Junction',
+        coords: '37°45\'02.7"N 122°21\'19.0"W • Incline Gate 2',
+        depth: '1.94',
+        risk: '79.0',
+        gate: '60% RESTRICTED BY DEBRIS',
+        flow: '76.4 m³/sec (Chokepoint)'
+      },
+      'mkt-dist': {
+        title: 'Central Market District',
+        coords: '37°46\'55.0"N 122°26\'04.1"W • Urban Sub-catchment',
+        depth: '0.45',
+        risk: '58.0',
+        gate: 'NORMAL STORM DRAINAGE',
+        flow: '18.1 m³/sec (Surface Pooling)'
+      },
+      'east-res': {
+        title: 'East Residential Basin',
+        coords: '37°44\'38.2"N 122°23\'11.9"W • Lowland Marsh Edge',
+        depth: '0.78',
+        risk: '52.3',
+        gate: 'SUMP PUMPS ENGAGED',
+        flow: '24.8 m³/sec (High Soil Sat)'
+      }
+    };
+
+    window.selectZoneData = function(zoneId) {
+      const data = window.zoneTelemetryStore[zoneId];
+      if (!data) return;
+
+      const card = document.getElementById('zoneDetailCard');
+      const titleEl = document.getElementById('detailZoneTitle');
+      const coordsEl = document.getElementById('detailCoords');
+      
+      if (titleEl) titleEl.textContent = data.title;
+      if (coordsEl) coordsEl.textContent = data.coords;
+      if (card) {
+        card.classList.remove('hidden');
+        card.classList.add('flex');
+      }
+    };
+
+    // Pin click listeners
+    pins.forEach(pin => {
+      pin.addEventListener('click', () => {
+        const id = pin.getAttribute('data-id');
+        window.selectZoneData(id);
+      });
+    });
+
+    // Close detail card button
+    const closeBtn = document.getElementById('closeDetailCard');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        const card = document.getElementById('zoneDetailCard');
+        if (card) card.classList.add('hidden');
+      });
+    }
+
+    // View Projection buttons switch styling
+    const view2d = document.getElementById('view2dBtn');
+    const view3d = document.getElementById('view3dBtn');
+    const viewSar = document.getElementById('viewSarBtn');
+
+    function setActiveViewBtn(activeBtn) {
+      [view2d, view3d, viewSar].forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+        btn.classList.add('text-on-surface-variant');
+      });
+      activeBtn.classList.remove('text-on-surface-variant');
+      activeBtn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+    }
+
+    if (view2d) view2d.addEventListener('click', () => setActiveViewBtn(view2d));
+    if (view3d) view3d.addEventListener('click', () => setActiveViewBtn(view3d));
+    if (viewSar) viewSar.addEventListener('click', () => setActiveViewBtn(viewSar));
+
+    // Zoom and pan simulation
+    let currentZoom = 1;
+    const viewport = document.getElementById('gisMapViewport');
+    const zoomIn = document.getElementById('zoomInBtn');
+    const zoomOut = document.getElementById('zoomOutBtn');
+    const resetView = document.getElementById('resetViewBtn');
+
+    function applyZoom(zoom) {
+      currentZoom = Math.min(Math.max(zoom, 0.8), 2.2);
+      if (viewport) {
+        viewport.style.transform = `scale(${currentZoom})`;
+      }
+    }
+
+    if (zoomIn) zoomIn.addEventListener('click', () => applyZoom(currentZoom + 0.2));
+    if (zoomOut) zoomOut.addEventListener('click', () => applyZoom(currentZoom - 0.2));
+    if (resetView) resetView.addEventListener('click', () => applyZoom(1.0));
+
+    // Evacuation Broadcast simulation
+    const dispatchBtn = document.getElementById('dispatchEvacBtn');
+    if (dispatchBtn) {
+      dispatchBtn.addEventListener('click', () => {
+        dispatchBtn.textContent = 'TRANSMITTING VIA CELL BROADCAST...';
+        dispatchBtn.classList.add('opacity-80');
+        setTimeout(() => {
+          dispatchBtn.textContent = 'ALERT BROADCASTED (18,450 CITIZENS)';
+          dispatchBtn.classList.remove('bg-error');
+          dispatchBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        }, 1200);
+      });
+    }
+  })();
+</script></main></div></body></html>
