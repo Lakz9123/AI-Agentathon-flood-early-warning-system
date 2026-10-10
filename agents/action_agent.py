@@ -61,7 +61,7 @@ def action_node(state: FloodSystemState) -> FloodSystemState:
 
     try:
         # Initialize Gemini LLM
-        llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
+        llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=api_key)
         
         prompt = f"""
         You are Sentinel AI, an expert Disaster Management Assistant.
@@ -90,6 +90,7 @@ def action_node(state: FloodSystemState) -> FloodSystemState:
         state["action_plan"] = response.content
         
     except Exception as e:
+        print(f"Gemini API Error: {e}")
         state["action_plan"] = generate_heuristic_plan(
             state.get('location', 'Sector'),
             risk_assessment.get('score', 50),

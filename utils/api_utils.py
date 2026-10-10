@@ -21,11 +21,17 @@ DISTRICT_DEMO_DATA = {
     "District 5 - Industrial Zone": {
         "weather": {"forecast_mm": 95, "status": "Heavy Industrial Corridor Rain"},
         "water": {"current_level_m": 6.20, "danger_level_m": 7.0, "trend": "Rising"}
+    },
+    "Chennai": {
+        "weather": {"forecast_mm": 120, "status": "Severe Urban Flash Storm"},
+        "water": {"current_level_m": 7.5, "danger_level_m": 8.0, "trend": "Rapidly Rising"}
     }
 }
 
 def _resolve_district_key(location: str) -> str:
     loc_lower = (location or "").lower()
+    if "chennai" in loc_lower:
+        return "Chennai"
     for key in DISTRICT_DEMO_DATA.keys():
         if key.lower() in loc_lower or loc_lower in key.lower() or (f"district {loc_lower[-1]}" in key.lower() if loc_lower[-1:].isdigit() else False):
             return key

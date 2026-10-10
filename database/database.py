@@ -45,14 +45,28 @@ def get_reports_by_location(location):
     return reports
 
 def get_recent_reports_count(location):
-    """Returns the count of recent reports for a given location."""
+    """Returns the count of recent reports for a given location in the last 24h, and the daily average over the past 7 days."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    # For the hackathon prototype, we just count all reports for the location
-    cursor.execute('SELECT COUNT(*) FROM citizen_reports WHERE location = ?', (location,))
-    count = cursor.fetchone()[0]
+    
+    # Last 24 hours
+    cursor.execute('''
+        SELECT COUNT(*) FROM citizen_reports 
+        WHERE location = ? AND timestamp >= datetime('now', '-1 day')
+    ''', (location,))
+    last_24h_count = cursor.fetchone()[0]
+    
+    # Previous 7 days baseline (days 1-8 before now)
+    cursor.execute('''
+        SELECT COUNT(*) FROM citizen_reports 
+        WHERE location = ? AND timestamp >= datetime('now', '-8 days') AND timestamp < datetime('now', '-1 day')
+    ''', (location,))
+    prev_7_days_count = cursor.fetchone()[0]
+    
     conn.close()
-    return count
+    
+    baseline_daily_avg = prev_7_days_count / 7.0
+    return last_24h_count, baseline_daily_avg
 
 if __name__ == "__main__":
     init_db()

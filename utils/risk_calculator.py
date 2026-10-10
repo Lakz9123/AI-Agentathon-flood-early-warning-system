@@ -5,13 +5,13 @@ def calculate_risk_score(weather_data, water_data, citizen_data, historical_data
     score = 0
     reasons = []
 
-    # 1. Weather Factor (0 - 30 points)
+    # 1. Weather Factor (0 - 22 points)
     forecast = weather_data.get("forecast_mm", 0)
     if forecast > 100:
-        score += 30
+        score += 22
         reasons.append(f"Heavy rainfall expected ({forecast} mm).")
     elif forecast > 50:
-        score += 15
+        score += 12
         reasons.append(f"Moderate rainfall expected ({forecast} mm).")
 
     # 2. Water Level Factor (0 - 35 points)

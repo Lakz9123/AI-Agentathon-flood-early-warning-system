@@ -7,14 +7,20 @@ def citizen_node(state: FloodSystemState) -> FloodSystemState:
     location = state.get("location", "")
     demo_mode = state.get("demo_mode", False)
     
-    if demo_mode and location == "Chennai":
+    if demo_mode and location.lower() == "chennai":
         count = 15
+        baseline = 3.0
     else:
         # Fetch from SQLite database
         try:
-            count = get_recent_reports_count(location)
+            count, baseline = get_recent_reports_count(location)
         except Exception as e:
             count = 0
+            baseline = 0.0
             
-    state["citizen_data"] = {"complaints_count": count}
+    state["citizen_data"] = {
+        "complaints_count": count,
+        "baseline_daily_avg": baseline,
+        "unusual_increase": count > baseline * 1.5 if baseline > 0 else count > 5
+    }
     return state

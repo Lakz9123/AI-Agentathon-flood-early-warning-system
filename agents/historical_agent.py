@@ -47,6 +47,11 @@ def get_historical_data(location: str) -> dict:
 def historical_node(state: FloodSystemState) -> FloodSystemState:
     """Agent responsible for checking historical flood risk for the selected area."""
     location = state.get("location", "District 4 - Metro Basin")
-    hist_data = get_historical_data(location)
+    demo_mode = state.get("demo_mode", False)
+    
+    if demo_mode and location.lower() == "chennai":
+        hist_data = {"previous_flood_events": 3, "historical_risk": "High"}
+    else:
+        hist_data = get_historical_data(location)
     state["historical_data"] = hist_data
     return state
